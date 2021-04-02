@@ -6,7 +6,6 @@
   "bugs": {
     "url": "https://github.com/rstacruz/nprogress/issues"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-transform-modules-commonjs": "^7.9.0",
