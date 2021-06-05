@@ -6,15 +6,6 @@
   "bugs": {
     "url": "https://github.com/rstacruz/nprogress/issues"
   },
-  "devDependencies": {
-    "@babel/core": "^7.13.14",
-    "@babel/plugin-transform-modules-commonjs": "^7.13.8",
-    "@types/jest": "^26.0.22",
-    "babel-jest": "^26.6.3",
-    "jest": "^26.6.3",
-    "microbundle": "^0.13.0",
-    "prettier": "^2.2.1"
-  },
   "files": [
     "demo.html",
     "dist",
@@ -39,6 +30,8 @@
     "type": "git",
     "url": "git+https://github.com/rstacruz/nprogress.git"
   },
+  "source": "src/nprogress.js",
+  "umd:main": "dist/nprogress.umd.js",
   "scripts": {
     "build": "microbundle --name NProgress",
     "dev": "npm run build -- watch",
@@ -46,6 +39,13 @@
     "prettier:check": "prettier --check 'src/*.js' 'css/*.{css,scss}'",
     "test": "jest"
   },
-  "source": "src/nprogress.js",
-  "umd:main": "dist/nprogress.umd.js"
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.14.0",
+    "@types/jest": "^26.0.23",
+    "babel-jest": "^27.0.2",
+    "jest": "^27.0.4",
+    "microbundle": "^0.13.1",
+    "prettier": "^2.3.1"
+  }
 }
