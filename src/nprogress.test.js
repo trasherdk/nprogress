@@ -38,7 +38,7 @@ describe("set()", () => {
     NProgress.configure({ speed: 10 });
     NProgress.set(0).set(1);
     expect(all("#nprogress").length).toEqual(1);
-    jest.advanceTimersByTime(100)
+    jest.advanceTimersByTime(100);
     expect(all("#nprogress").length).toEqual(0);
   });
 
